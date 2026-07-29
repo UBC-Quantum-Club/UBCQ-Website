@@ -63,6 +63,12 @@ h1, h2, h3, h4, h5, h6 {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
+.home-page .navbar {
+    background: #f4f4f6;
+    color: #1b1b1e;
+    box-shadow: 0 8px 20px rgba(15, 20, 35, 0.08);
+}
+
 .navbar .container {
     display: flex;
     justify-content: space-between;
@@ -81,6 +87,10 @@ h1, h2, h3, h4, h5, h6 {
     gap: 1rem;
     text-decoration: none;
     color: white;
+}
+
+.home-page .nav-brand-link {
+    color: #1b1b1e;
 }
 
 .logo {
@@ -105,6 +115,12 @@ h1, h2, h3, h4, h5, h6 {
     color: white;
     text-decoration: none;
     transition: opacity 0.3s;
+}
+
+.home-page .nav-menu a {
+    color: #1b1b1e;
+    font-weight: 600;
+    font-size: 0.95rem;
 }
 
 .nav-menu a:hover {
@@ -173,6 +189,10 @@ h1, h2, h3, h4, h5, h6 {
     background: #0b0f19;
 }
 
+.home-page .hero {
+    background: #0b0f19;
+}
+
 .hero-card {
     width: 100%;
     min-height: 520px;
@@ -190,6 +210,11 @@ h1, h2, h3, h4, h5, h6 {
     box-shadow: none;
 }
 
+.hero-banner {
+    min-height: 520px;
+    padding: 5rem 2.5rem;
+}
+
 .hero-overlay {
     position: absolute;
     inset: 0;
@@ -203,6 +228,14 @@ h1, h2, h3, h4, h5, h6 {
     color: #f5f5f5;
 }
 
+.hero-kicker {
+    font-size: 1rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    margin-bottom: 0.8rem;
+    opacity: 0.85;
+}
+
 .hero h2 {
     font-family: 'Exo 2', sans-serif;
     font-size: 3.2rem;
@@ -210,6 +243,11 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
     position: relative;
     z-index: 2;
+}
+
+.home-page .hero h2 {
+    font-size: 2.6rem;
+    letter-spacing: 0.08em;
 }
 
 .hero p {
@@ -421,6 +459,21 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 2rem;
 }
 
+.btn-cta {
+    background: linear-gradient(135deg, #f2a24f 0%, #e07b2b 60%, #c85c1a 100%);
+    color: #fff;
+    border-radius: 999px;
+    padding: 12px 32px;
+    font-size: 0.95rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.btn-cta:hover {
+    background: linear-gradient(135deg, #f7b365 0%, #e58a3a 60%, #cf6a25 100%);
+    color: #fff;
+}
+
 .btn-primary {
     display: inline-block;
     padding: 14px 35px;
@@ -619,6 +672,212 @@ h1, h2, h3, h4, h5, h6 {
     overflow: hidden;
 }
 
+.home-page .section {
+    box-shadow: none;
+    margin: 0;
+    border-radius: 0;
+}
+
+.mission-strip {
+    background: #e2763e;
+    padding: 4rem 0 4.5rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.mission-strip h3 {
+    font-family: 'Exo 2', sans-serif;
+    font-size: 1.8rem;
+    margin-bottom: 1.2rem;
+    color: #ffffff;
+    letter-spacing: 0.08em;
+}
+
+.mission-strip p {
+    max-width: 760px;
+    margin: 0 auto;
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.88);
+}
+
+.mission-strip::before {
+    content: '';
+    position: absolute;
+    width: 220px;
+    height: 180px;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-18deg);
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 60% 40% 60% 40%;
+}
+
+.goals-section {
+    background: #0b1a2d;
+    padding: 4rem 0;
+    color: #f4f4f6;
+}
+
+.goals-section h3 {
+    text-align: center;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+}
+
+.goals-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+}
+
+.goal-card {
+    background: #f4f4f6;
+    color: #1b1b1e;
+    padding: 1.5rem;
+    border-radius: 14px;
+    box-shadow: 0 10px 24px rgba(8, 18, 32, 0.25);
+    text-align: center;
+}
+
+.goal-card h4 {
+    font-family: 'Exo 2', sans-serif;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+.goal-card p {
+    font-size: 0.9rem;
+    color: #4a5161;
+}
+
+.goal-wide {
+    grid-column: span 2;
+}
+
+.offer-section {
+    background: #f4f4f6;
+    padding: 4rem 0 5rem;
+}
+
+.offer-section .section-header h2 {
+    color: #1b1b1e;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-size: 1.8rem;
+}
+
+.offer-section .offer-grid {
+    margin-top: 2.5rem;
+}
+
+.offer-section .offer-card {
+    background: #ffffff;
+    border: 1px solid #e0e2ea;
+    box-shadow: 0 10px 22px rgba(12, 18, 32, 0.12);
+    border-radius: 20px;
+    padding: 2rem 2rem 2.2rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.offer-section .offer-card h3 {
+    color: #1b1b1e;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-size: 1rem;
+}
+
+.offer-section .offer-card p {
+    color: #4a5161;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.offer-cta {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.offer-section .offer-card::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    box-shadow: inset 6px 0 0 rgba(224, 111, 51, 0.9);
+    border-radius: 20px;
+    pointer-events: none;
+}
+
+.offer-section .offer-icon {
+    font-size: 0;
+    margin-bottom: 0;
+    height: 0;
+}
+
+.team-section {
+    background: #ffffff;
+    padding: 4rem 0 5rem;
+}
+
+.team-section .section-header h2 {
+    color: #1b1b1e;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+.team-section .section-subtitle {
+    color: #8a909c;
+    font-size: 0.95rem;
+}
+
+.faq-section {
+    background: #f4f4f6;
+    padding: 4rem 0 5rem;
+}
+
+.faq-section .section-header h2 {
+    color: #1b1b1e;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+.faq-section .section-subtitle {
+    color: #8a909c;
+    font-size: 0.95rem;
+}
+
+.faq-list {
+    max-width: 520px;
+    margin: 2rem auto 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.9rem;
+}
+
+.faq-item-button {
+    background: #ffffff;
+    border: 1px solid #eceef4;
+    border-radius: 12px;
+    padding: 0.95rem 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 0.95rem;
+    letter-spacing: 0.02em;
+    color: #1b1b1e;
+    box-shadow: 0 10px 20px rgba(12, 18, 32, 0.08);
+    cursor: pointer;
+}
+
+.faq-arrow {
+    font-size: 1.2rem;
+    color: #1b1b1e;
+}
+
 .section-header {
     text-align: center;
     margin-bottom: 3rem;
@@ -813,6 +1072,10 @@ h1, h2, h3, h4, h5, h6 {
     animation: quantumShine 3s infinite;
 }
 
+.home-page .offer-card::before {
+    display: none;
+}
+
 @keyframes quantumShine {
     0% { transform: translateX(-100%) translateY(-100%) rotate(45deg); }
     100% { transform: translateX(100%) translateY(100%) rotate(45deg); }
@@ -822,6 +1085,11 @@ h1, h2, h3, h4, h5, h6 {
     transform: translateY(-8px);
     border-color: #7b2cbf;
     box-shadow: 0 8px 25px rgba(123, 44, 191, 0.2);
+}
+
+.home-page .offer-card:hover {
+    border-color: #f28b2a;
+    box-shadow: 0 12px 26px rgba(242, 139, 42, 0.2);
 }
 
 .quantum-gate {
@@ -842,6 +1110,10 @@ h1, h2, h3, h4, h5, h6 {
     color: white;
     z-index: 1;
     animation: quantumPulse 2s infinite ease-in-out;
+}
+
+.home-page .quantum-gate {
+    display: none;
 }
 
 @keyframes quantumPulse {
@@ -872,6 +1144,10 @@ h1, h2, h3, h4, h5, h6 {
     z-index: 2;
 }
 
+.home-page .offer-card h3 {
+    color: #1b1b1e;
+}
+
 .offer-card p {
     font-size: 1rem;
     color: #1b1b1e;
@@ -880,6 +1156,10 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0;
     position: relative;
     z-index: 2;
+}
+
+.home-page .offer-card p {
+    color: #4a5161;
 }
 
 /* Team in Action Section */
@@ -1720,6 +2000,10 @@ h1, h2, h3, h4, h5, h6 {
         min-height: 420px;
         padding: 3rem 1.5rem;
         border-radius: 0;
+    }
+
+    .goal-wide {
+        grid-column: span 1;
     }
 
     .footer .container {
